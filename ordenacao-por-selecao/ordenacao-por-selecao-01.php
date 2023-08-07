@@ -28,34 +28,23 @@ function ordenacaoPorSelecao(array $arr) : array
     for($i = 0; $i < $qtdArray; $i++){
         
         
-        echo count($arr), "\n";
-        
-        
         $menor = buscaMenor($arr);
         
-        echo "index: ", $menor, "\n";
-        
         $novoArr[] = $arr[$menor];
-        
-        echo "Novo array: ";
-        var_dump($novoArr);
-        echo "\n";
         
         unset($arr[$menor]);
 
         $arr = array_values($arr); 
 
-        var_dump($arr);
-
-        
     }
     
     return $novoArr;
 }
 
-$array = [9,2,3,4];
+$array = [9,1,3,7];
 
 $newArray = ordenacaoPorSelecao($array);
 
+var_dump($newArray);
 
 ?>
