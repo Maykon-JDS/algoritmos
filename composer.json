@@ -1,0 +1,17 @@
+{
+    "name": "maykon-jds/algoritmos",
+    "require": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "MaykonJds\\Algoritmos\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "maykon-jds",
+            "email": "maykondias2001@gmail.com"
+        }
+    ]
+}
